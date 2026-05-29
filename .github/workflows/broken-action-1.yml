@@ -9,7 +9,6 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-
       - name: Hello World
         run: echo "hello world"
 
@@ -18,7 +17,6 @@ jobs:
 
       - name: Upload file
         uses: actions/upload-artifact@v3
-        run: echo "Uploading the dictionary file"
         with:
           name: dictionary.txt
           path: utils/dictionary.txt
